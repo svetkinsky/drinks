@@ -1,0 +1,111 @@
+@import './fontawesome-free-5.12.1-web/css/all.min.css';
+// @import './font-awesome-4.7.0/scss/font-awesome.scss';
+// @import url("https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat-Regular.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../assets/fonts/Montserrat-Bold.ttf) format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+$border: 1px solid #ccc;
+
+button,
+button:active,
+button:focus {
+    outline: none;
+}
+
+
+body,
+html,
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.wrapper {
+    background: #1d2c3f;
+    padding: 28px 38px;
+    max-width: 1166px;
+    margin: 0 auto;
+}
+
+
+.content {
+    width: 1090px;
+    height: 342px;
+    background-image: url(../img/Group1.jpg);
+    border-radius: 7px;
+    position: relative;
+
+    .container {
+        max-width: 366px;
+        position: absolute;
+        top: 88px;
+        left: 657px;
+    }
+    
+}
+
+.summer__drink {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+    color: #abb6bf;
+}
+
+.recipe {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 24px;
+    color: #484a51;
+    margin-top: 15px;
+}
+
+.scale {
+    display: flex;
+    margin-top: 15px;
+}
+
+.active__star {
+    color: #ed7b5a;
+}
+
+.inactive__star {
+    color: #b9bbc3;
+} 
+
+.rating {
+    color: #9aa8b3;
+    margin-left: 11px;
+}
+
+.button {
+    font-family: 'Montserrat';
+    font-weight: 700;;
+    width: 95px;
+    height: 32px;
+    border: none;
+    background: #8bc058;
+    border-radius: 3px;
+    color: #ffffff;
+    margin-top: 34px;
+
+    &:hover {
+        background: none;
+        color: #8bc058;
+        border: 1px solid #8bc058;
+    }
+}
+
