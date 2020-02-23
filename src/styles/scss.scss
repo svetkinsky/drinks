@@ -16,7 +16,7 @@
     font-style: normal;
 }
 
-$border: 1px solid #ccc;
+
 
 button,
 button:active,
@@ -48,64 +48,68 @@ html,
     background-image: url(../img/Group1.jpg);
     border-radius: 7px;
     position: relative;
+}
 
-    .container {
-        max-width: 366px;
-        position: absolute;
-        top: 88px;
-        left: 657px;
+.drinks {
+    max-width: 366px;
+    position: absolute;
+    top: 88px;
+    left: 657px;
+
+    .summer__drink {
+        font-family: 'Montserrat';
+        font-weight: 400;
+        font-size: 12px;
+        color: #abb6bf;
     }
-    
-}
 
-.summer__drink {
-    font-family: 'Montserrat';
-    font-weight: 400;
-    font-size: 12px;
-    color: #abb6bf;
-}
-
-.recipe {
-    font-family: 'Montserrat';
-    font-weight: 700;
-    font-size: 24px;
-    color: #484a51;
-    margin-top: 15px;
-}
-
-.scale {
-    display: flex;
-    margin-top: 15px;
-}
-
-.active__star {
-    color: #ed7b5a;
-}
-
-.inactive__star {
-    color: #b9bbc3;
-} 
-
-.rating {
-    color: #9aa8b3;
-    margin-left: 11px;
-}
-
-.button {
-    font-family: 'Montserrat';
-    font-weight: 700;;
-    width: 95px;
-    height: 32px;
-    border: none;
-    background: #8bc058;
-    border-radius: 3px;
-    color: #ffffff;
-    margin-top: 34px;
-
-    &:hover {
-        background: none;
-        color: #8bc058;
-        border: 1px solid #8bc058;
+    .recipe {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        font-size: 24px;
+        color: #484a51;
+        margin-top: 15px;
     }
-}
 
+    .scale {
+        display: flex;
+        margin-top: 15px;
+
+        .star {
+            color: #b9bbc3;
+
+            &:hover,
+            &__active {
+                color: #ed7b5a;
+                cursor: pointer;
+            }
+        }
+
+        .rating {
+            color: #9aa8b3;
+            margin-left: 11px;
+        }
+    }
+
+
+
+    .button {
+        font-family: 'Montserrat';
+        font-weight: 700;
+        width: 95px;
+        height: 32px;
+        border: none;
+        background: #8bc058;
+        border-radius: 3px;
+        color: #ffffff;
+        margin-top: 34px;
+
+        &:hover {
+            background: none;
+            color: #8bc058;
+            border: 1px solid #8bc058;
+            cursor: pointer;
+        }
+    }
+
+}
